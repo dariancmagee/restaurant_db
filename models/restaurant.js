@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Reviewer.belongsTo(models.restaurant, {
-        foreignKey: "restaurantID", 
+        foreignKey: "restaurant_id", 
         onDelete: "CASCADE"
       });
     }
