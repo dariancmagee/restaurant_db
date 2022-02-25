@@ -16,7 +16,10 @@ module.exports = {
       },
       karma: {
         type: Sequelize.INTEGER,
-        validate: {min: 0, max: 7}
+        validate: {
+          min: 0,
+           max: 7
+          }
       },
       createdAt: {
         allowNull: false,
